@@ -1,0 +1,53 @@
+/*============================================
+    MENU SECTION ANIMATION
+==============================================*/
+.menu {
+    color: rgb(223, 217, 217);
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0% auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu li {
+    color: #000;
+    background-color: rgb(162, 160, 165);
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border: 1px solid #9d9fa2;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+    border-radius: 6px;
+    /*background-color: #052134:*/
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu li:hover {
+    color: rgb(255, 249, 249);
+    background-color: rgba(31, 30, 29, 0.3);
+}
+
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Space Station | Resort</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/shared.css">
+        <link rel="stylesheet" href="./css/animations.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+		<body>
+            <!-- NAV-->
+            <div class="wrap">
+                <div class="menu-container">
+                    <ul class="menu">
+                        <a href="#home"><li>HOME</li></a>
+                        <a href="#gallery"><li>GALLERY</li></a>
+                        <a href="#contact"><li>RESERVATIONS</li></a>
+                        <a href="#footer"><li>FOOTER</li></a>
+                    </ul>
+                </div>
+            </div>
+            <!-- END NAV-->
+            
+            <!--HOME-->
+            <div id="home">
+                <div class="container"> 
+                    <div class="text-center">
+                        <span class="head-main">The Space Station</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END HOME-->
+
+            <div class="container">
+                <div id="slideshow">
+                    <div>
+                        <img src="./images/thumb/thumbnail_1.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_2.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_3.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_4.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_5.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_6.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_7.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_8.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_9.png">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- RSVP-->
+            <section id="contact">
+                <div class="container">
+                    <div class="heading-padding">
+                        <h1 class="heading-padding">RESERVATIONS</h1>
+                        <div class="reservation">
+                            <h2><span>Your adventure is just around the moon.</span>
+                                <br>Reserve your flight today!
+                            </h2>
+                            <p class="rsvp-text">
+                                Please provide us with your basic contact information
+                            </p>
+                            <div class="form-rsvp">
+                                <form action="" method="post">
+                                    <input class="rsvp" type="text" value="" placeholder="First Name">
+                                    <input class="rsvp" type="text" value="" placeholder="Last Name">
+                                    <input class="rsvp" type="text" value="" placeholder="Email Address">
+                                    <input class="rsvp" type="text" value="" placeholder="Phone Number">
+                                    <div class="form-spacer">
+                                        <label class="terms">Terms and Conditions</label>
+                                    </div>
+                                    <div class="submit">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END RSVP-->
+                
+            <!--FOOTER-->
+            <div id="footer">
+                www.thespacestation.space &nbsp;|&nbsp; &copy; 2020
+            </div>
+            <!-- END FOOTER-->
+
+            <script>
+                $("#slideshow > div:gt(0)").hide();
+                
+                setInterval(function() {
+                    $('#slideshow > div:first')
+                        .fadeOut(1000)
+                        .next()
+                        .fadeIn(1000)
+                        .end()
+                        .appendTo('#slideshow');
+                },      3000);
+            </script>
+		</body>
+</html>
